@@ -1,0 +1,22 @@
+{
+    "services" : [
+
+{   "id" : 1, 
+    "name" :"Basic & Common Repairs",
+    "contanet":"Who are in extremely love with eco friendly system",
+    "Image":"img/s1.jpg.webp"  
+},
+
+{   "id" : 2, 
+    "name" :"Basic & Common Repairs",
+    "contanet":"Who are in extremely love with eco friendly system",
+    "Image":"img/s1.jpg.webp"  
+},
+
+{   "id" : 3, 
+    "name" :"Basic & Common Repairs",
+    "contanet":"Who are in extremely love with eco friendly system",
+    "Image":"img/s1.jpg.webp"  
+}
+
+]}
