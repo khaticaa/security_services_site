@@ -1,0 +1,147 @@
+.section5{
+    width: 100%;
+    padding: 30px 0px ;
+    .s5-o{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .s5top{
+            text-align: center;
+        }
+
+        .s5bottom{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            .s5bot{
+          
+                
+                .h5{
+                    background-color: #000;
+                    color: #fff;
+                    font-weight: 100;
+                    padding: 2px 15px;
+                    width: 115px;
+                    text-align: center;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    color: gray;
+                   
+                }
+                h4{
+                    font-size: 18px;
+                    font-family: "Poppins", sans-serif;
+                    color: #222222;
+                    line-height: 1.2em !important;
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                    -webkit-transition: all 0.3s ease 0s;
+                    -moz-transition: all 0.3s ease 0s;
+                    -o-transition: all 0.3s ease 0s;
+                    transition: all 0.3s ease 0s;
+
+
+                }
+                p{
+                    color: #777777;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.625em;
+                }
+                .boticon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                  h6{
+                    color: #777777;
+                    
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1.625em;
+                  }
+                }
+                }
+            }
+        }
+    }
+
+
+    
+
+    @media screen and (max-width:768px) {
+        .section5{
+            .s5-o{
+               gap: 40px;
+              
+                .s5top{
+                    width: 100%;
+                    p{
+                        width: 90%;
+                    }
+                }
+                .s5bottom{
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 20px;
+                   .s5bot{width: 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    h4{
+                        width: 90%;
+                    }
+                    .boticon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80%;
+                        justify-content: space-between;
+                      
+                    }
+                   }
+                }
+            }
+        }
+   
+    }
+
+
+    @media screen and (max-width:320px) {
+        .section5{
+            .s5-o{
+               gap: 40px;
+              
+                .s5top{
+                    width: 100%;
+                    p{
+                        width: 90%;
+                    }
+                }
+                .s5bottom{
+                    grid-template-columns: repeat(1,1fr);
+                    gap: 20px;
+                   .s5bot{width: 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    h4{
+                        width: 90%;
+                    }
+                    .boticon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80%;
+                        justify-content: space-between;
+                      
+                    }
+                   }
+                }
+            }
+        }
+   
+    }

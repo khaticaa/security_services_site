@@ -1,8 +1,10 @@
 .banner {
     width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("../img/header-bg.jpg.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url("../img/header-bg.jpg.webp");
   background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
   .banner-o{
 
     .bannertext{
@@ -18,13 +20,58 @@
      h1{
         font-size: 45px;
      }
+     h4{
+      font-weight: 100;
+     }
      p{
         font-size: 18px;
      }
      button{
-        padding: 10px 25px;
+      //   padding: 10px 25px;
+        background-color: #fab700;
+        line-height: 42px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: none;
+        color: #fff;
+        border: 1px solid transparent;
+
+        &:hover{
+         background-color: transparent;
+         border: #fab700 1px solid;
+         color: #fab700;
+        }
      }
     }
   }
     // background-image: url(../../img/header-bg.jpg.webp);
+}
+
+
+
+
+@media screen and (max-width:768px) {
+   .banner{
+      .banner-o{
+         .bannertext{
+            width: 90%;
+         }
+      }
+   }
+   
+}
+
+@media screen and (max-width:320px) {
+   .banner{
+      .banner-o{
+         .bannertext{
+            width: 100%;
+            h1{
+               font-size: 30px;
+            }
+
+         }
+      }
+   }
+   
 }

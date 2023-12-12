@@ -1,0 +1,87 @@
+.section2{
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #f9f9ff;
+    .section2-o{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .s2top{
+            text-align: center;
+        }
+        .s2bottom{
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            // grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+            .s2bot{
+                background-color: #fff;
+                padding: 30px;
+                margin-bottom: 30px;
+                -webkit-transition: all 0.3s ease 0s;
+                -moz-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s
+               
+              
+                h4{
+                    transition: all 0.3s ease 0s;
+                     margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                p{ padding-top: 30px;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    color: gray;
+                 
+                }
+
+                &:hover{
+                    background-color: #fab700;
+                    
+                    p{color: black;}
+                }
+               
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .section2{
+        width: 100%;
+        .section2-o{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .s2top{}
+            .s2bottom{
+                grid-template-columns: repeat(2,1fr);
+               
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .section2{
+        width: 100%;
+        .section2-o{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .s2top{}
+            .s2bottom{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }
+}

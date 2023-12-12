@@ -1,5 +1,9 @@
 @import"layout/nav.scss"; 
 @import"layout/banner.scss"; 
+@import"layout/section1.scss"; 
+@import"layout/section2.scss"; 
+@import"layout/section5.scss"; 
+@import"layout/footer.scss"; 
 
 .container{
     margin: 0 auto;
@@ -10,4 +14,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
 }
