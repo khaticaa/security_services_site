@@ -1,4 +1,5 @@
 const nav=document.querySelector("nav")
+let id = new URLSearchParams(window.location.search).get('id');
 
 window.addEventListener("scroll",()=>{
     if(window.scrollY>50){
@@ -14,22 +15,25 @@ window.addEventListener("scroll",()=>{
 })
 let detal = document.querySelector('.detal')
 function Service(){
-    fetch('http://localhost:3000/services')
+    fetch(`http://localhost:3000/services/${id}`)
     .then(res => res.json())
     .then(data =>{
     
-        data.forEach(element => {
         detal.innerHTML += `
-            <div class="s1box">
+            <div class="s1box  ">
             <div class="img">
-                <img src="${element.Image}" alt="">
+                <img src="${data.Image}" alt="">
             </div>
-            <h3>${element.name}</h3>
-            <p>${element.contanet}</p>
+            <h3>${data.name}</h3>
+            <p>${data.contanet}</p>
             
         </div>
             `
-        })
     } )
 }
+
+
+
+
+
 Service()
