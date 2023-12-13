@@ -48,8 +48,7 @@ nav .nav-o .navbot {
 nav .nav-o .navbot .navimg img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 nav .nav-o .navbot .navrig .bi-border-width {
   display: none;
@@ -100,8 +99,7 @@ nav .nav-o .navbot .navrig ul li a {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../img/header-bg.jpg.webp");
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
 }
 .banner .banner-o .bannertext {
@@ -236,8 +234,7 @@ nav .nav-o .navbot .navrig ul li a {
   }
   .section1 .section1-o .s1bottom .s1box .img img {
     vertical-align: middle;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .section2 {
@@ -264,6 +261,9 @@ nav .nav-o .navbot .navrig ul li a {
   background-color: #fff;
   padding: 30px;
   margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s h4;
   transition-transition: all 0.3s ease 0s;
   transition-margin-top: 20px;
@@ -349,6 +349,9 @@ nav .nav-o .navbot .navrig ul li a {
   margin-top: 10px;
   font-weight: 600;
   margin-bottom: 12px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .section5 .s5-o .s5bottom .s5bot p {

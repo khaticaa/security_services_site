@@ -32,7 +32,7 @@ function Service() {
             <i class="bi bi-heart"></i>
             <div class="buttons">
                 <button onclick ="DeleteItem(${element.id})"> Delete</button>
-                <button>Update</button>
+                <button  onclick ="UpdateItem(${element.id})">Update</button>
             </div>
         </div>
             `
@@ -41,11 +41,16 @@ function Service() {
 }
 Service()
 
-const goTo = (id) => {
-    window.location = `details.html?id=${id}`
-}
+// const goTo = (id) => {
+//     window.location = `details.html?id=${id}`
+// }
 
 const DeleteItem = (id) => {
     axios.delete(`http://localhost:3000/services/${id}`);
+    window.location.reload();
+}
+
+const UpdateItem = (id) => {
+    axios.update(`http://localhost:3000/services/${id}`);
     window.location.reload();
 }
