@@ -29,7 +29,7 @@ function Service() {
             </div>
             <h3>${element.name}</h3>
             <p>${element.contanet}</p>
-            <i class="bi bi-heart"></i>
+            <i  onclick="addFavorite(${element.id})"class="bi bi-heart"></i>
             <div class="buttons">
                 <button onclick ="DeleteItem(${element.id})"> Delete</button>
                 <button  onclick ="UpdateItem(${element.id})">Update</button>
@@ -51,6 +51,15 @@ const DeleteItem = (id) => {
 }
 
 const UpdateItem = (id) => {
-    axios.update(`http://localhost:3000/services/${id}`);
-    window.location.reload();
+  
+    window.location=`update.html?id=${id}`
+}
+
+let id = new URLSearchParams(window.location.search).get('id');
+
+function addFavorite(id) {
+    axios.get("http://localhost:3000/services/"  + id)
+    .then(res=> {
+        axios.post("http://localhost:3000/favorites", res.data)
+    })
 }
